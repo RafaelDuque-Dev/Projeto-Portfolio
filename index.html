@@ -5,11 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Portfolio</title>
     <!--Linkando arquivo CSS-->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
     <!--Cabeçalho-->
-    <header></header>
+    <header class="cabecalho">
+        <nav class="cabecalho__menu"> <!--Links para navegação-->
+            <a class="cabecalho__menu__link" href="index.html">Home</a>
+            <a class="cabecalho__menu__link"href="about.html">Sobre mim</a>
+            <a class="cabecalho__menu__link"href="curriculum.html">Currículo</a>
+        </nav>
+    </header>
 
     <!--Conteudo Principal-->
     <main class="apresentacao">
@@ -18,14 +24,27 @@
             <h1 class="apresentacao__conteudo__titulo">Eleve seu negócio digital a outro nível <strong class="titulo-destaque">com um Front-end de qualidade!</strong></h1>
             <p class="apresentacao__conteudo__paragrafo">Olá! Sou Rafael Duque, desenvolvedor Front-end com especialidade em HTML e CSS. Em uma jornada na área de programação colocando em prática boas ideias. Vamos conversar?</p>
             <div class="apresentacao__conteudo__links"> <!--Pequena divisão-->
-                <a class="apresentacao__conteudo__links__link" href="https://www.instagram.com/raafaell_ferraz/">Instagram</a>
-                <a class="apresentacao__conteudo__links__link" href="https://github.com/RafaelDuque-Dev">Github</a>
+                <h2 class="apresentacao__conteudo__links__subtitulo">Acesse minhas redes:</h2>
+                <a class="apresentacao__conteudo__links__link" href="https://github.com/RafaelDuque-Dev">
+                    <img src="assets/github.png" alt="icone github">
+                    Github
+                </a>
+                <a class="apresentacao__conteudo__links__link" href="https://www.linkedin.com/in/rafael-ferraz-0830a511b/">
+                    <img src="assets/linkedin.png" alt="icone linkedin">
+                    Linkedin
+                </a>
+                <a class="apresentacao__conteudo__links__link" href="https://www.instagram.com/raafaell_ferraz/">
+                    <img src="assets/instagram.png" alt="icone instagram">
+                    Instagram
+                </a>
             </div>
         </section>
-        <img src="Imagens/Foto Portfolio.png" alt="Foto Portfolio Rafael Duque">
+        <img class="apresentacao__conteudo__img" src="assets/Foto Portfolio 2.png" alt="Foto Portfolio Rafael Duque">
     </main>
 
     <!--Rodapé-->
-    <footer></footer>
+    <footer class="rodape">
+        <p>Desenvolvido por Rafael Duque.</p>
+    </footer>
 </body>
 </html>

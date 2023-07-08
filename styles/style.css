@@ -1,0 +1,160 @@
+/*Fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    /* Variaveis */
+    --cor-primaria: #001C30;
+    --cor-secundaria: #176B87;
+    --cor-terciaria: #64CCC5;
+    --cor-hover-primaria: #DAFFFB;
+    --cor-hover-secundaria: ;
+
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+
+}
+
+* {
+    /* Reset da Pagina */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* height: 100vh; Preenchimento da tela toda */
+    box-sizing: border-box; /*Controle para conteudo Filho nao ultrapassar o tamanho do Pai*/
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+
+.cabecalho {
+    padding: 2% 0 0 15%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link {
+    font-family: var(--fonte-secundaria);
+    font-size: 24px;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+
+.cabecalho__menu__link:hover:hover {
+    color: var(--cor-hover-primaria);
+    font-size: 26px;  
+}
+
+.titulo-destaque{
+    color: var(--cor-terciaria);
+}
+
+.apresentacao{
+    padding: 5% 15%;
+    /* margin: 10% 16%; Margem da pagina vertical e Horizontal */
+    display: flex;
+    align-items: center; /*Alinhamento de elementos*/
+    justify-content: space-between; /*Espaçamento entre elementos*/
+}
+
+.apresentacao__conteudo{
+    width: 615px; /*Largura conteudo*/
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /*Espassamento do flexbox*/
+}
+
+.apresentacao__conteudo__titulo{
+    font-size: 36px;
+    font-family: var(--fonte-primaria);
+}
+
+.apresentacao__conteudo__titulo:hover{
+    font-size: 40px;
+}
+
+.apresentacao__conteudo__paragrafo{
+    font-size: 24px;
+    font-family: var(--fonte-secundaria);
+}
+
+.apresentacao__conteudo__paragrafo:hover{
+    font-size: 26px;
+}
+
+.apresentacao__conteudo__links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.apresentacao__conteudo__links__subtitulo{
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.apresentacao__conteudo__links__link{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid var(--cor-terciaria);/*Borda e tipo da borda do link*/
+    width: 378px;
+    text-align: center; /*Alinhamento do texto*/
+    border-radius: 8px; /*Borda de arredondamento*/
+    font-size: 24px;
+    padding: 21.5px 0; /*Borda Vertical e Horizontal*/
+    text-decoration: none; /*Sem decoração no link*/
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
+    font-weight: 600; /*Espessura da fonte*/
+}
+
+/*Efeito Hover*/
+.apresentacao__conteudo__links__link:hover{
+    background-color:var(--cor-hover-primaria);
+    padding: 25.5px 7px;
+}
+
+.apresentacao__conteudo__img:hover{
+zoom: 110%;
+}
+
+.rodape{
+    background-color: var(--cor-terciaria);
+    color: var(--cor-primaria);
+    padding: 24px;
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 24px;
+    font-weight: 400;
+}
+
+
+
+/*Curriculo*/
+.apresentacao__conteudo__estudos{
+    font-size: 24px;
+    font-family: var(--fonte-secundaria);
+    text-decoration: none;
+}
+
+.apresentacao__conteudo__estudos:hover{
+    font-size: 26px;
+}
+
+.apresentacao__conteudo__estudos__links{
+    text-decoration: none;
+    color: var(--cor-terciaria);
+}
+
+.apresentacao__conteudo__estudos__links:hover{
+    font-size: 28px;
+    background-color:var(--cor-hover-primaria);
+}
